@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--#include virtual="../include/meta.html" -->
+  <title>小库优选</title>
+  <!--#include virtual="../include/style-script.html" -->
+</head>
+
+<body>
+<div class="page-group">
+  <div class="page">
+    <?php 
+	$jumpurl = $this->jumpurl ? $this->jumpurl : '#'; 
+	$backClass =  $this->jumpurl ? '' : 'back';
+	?>
+    <header class="bar bar-nav"><a class="icon icon-left pull-left {{$backClass}}" href="{{$jumpurl}}"></a>
+      <h1 class="title">温馨提示</h1>
+    </header>
+    
+    <!-- 内容 -->
+    <div class="content">
+	  <?php
+	  $messages = (array) $this->message;
+	  $caption = $this->caption;
+	  if (!$caption && count($messages) == 1) {
+		  $caption = array_pop($messages);
+	  }
+	  ?>
+      <?php if ($this->status == 'failure'): ?>	
+      <!-- 错误 S -->
+      <div class="tishi-shuoming tishi-shuoming-cuowu"> <span class="icon icon-tishi-shuoming-cuowu"></span>
+        <p class="txt">{{$caption}}
+		  <cite>
+		    <?php foreach ($messages as $message): ?>
+		    {{$message}}<br />
+			<?php endforeach; ?>
+		  </cite>
+		</p>
+      </div>
+      <!-- 错误 E --> 
+      <?php else: ?>
+      <!-- 正确 S -->
+      <div class="tishi-shuoming tishi-shuoming-zhengque"> <span class="icon icon-tishi-shuoming-zhengque"></span>
+        <p class="txt">{{$caption}}
+		  <cite>
+		    <?php foreach ($messages as $message): ?>
+		    {{$message}}<br />
+			<?php endforeach; ?>
+		  </cite>
+		</p>
+      </div>
+      <!-- 正确 E -->
+	  <?php endif; ?>
+      
+	  <?php if ($this->jumpurl && $this->delay > 0): ?>
+      <div class="tishi-tiaozhuan-txt">
+        <p>页面将在<span class="delay"><?php echo $this->delay; ?></span>秒后跳转……</p>
+        <p><a class="jumpto" href="{{$this.jumpurl}}">如果您的浏览器没有自动跳转，请点击这里</a></p>
+      </div>
+	  <?php endif; ?>
+    </div>
+  </div>
+</div>
+ 
+</body>
+</html>

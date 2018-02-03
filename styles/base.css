@@ -1,0 +1,138 @@
+@font-face {
+	/******/
+}
+
+/***图标区域{{{***/
+
+
+/***}}}图标区域***/
+
+
+/*** loading ********************************************************************/
+.page-loader {
+  /* margin: 0 auto; */
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+.page-loader > div {
+  height: 100%;
+  width: 8px;
+  display: inline-block;
+  float: left;
+  margin-left: 2px;
+  -webkit-animation: delay 0.8s infinite ease-in-out;
+  animation: delay 0.8s infinite ease-in-out;
+}
+.page-loader .bar1 {
+  background-color: #754fa0;
+}
+.page-loader .bar2 {
+  background-color: #09b7bf;
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+.page-loader .bar3 {
+  background-color: #90d36b;
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+.page-loader .bar4 {
+  background-color: #f2d40d;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.page-loader .bar5 {
+  background-color: #fcb12b;
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+.page-loader .bar6 {
+  background-color: #ed1b72;
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+@-webkit-keyframes delay {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.05);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes delay {
+  0%, 40%, 100% {
+    transform: scaleY(0.05);
+    -webkit-transform: scaleY(0.05);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+
+
+/***预加载动画**************************************************************/
+.preloader-indicator-modal {
+	background: none;
+}
+
+.preloader-indicator-modal .preloader:after {
+	background-image: none;
+	display: none;
+}
+
+.preloader-indicator-modal .preloader {
+    width: 2.2rem;
+    height: 2.2rem;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgba(3, 169, 244, 0.7) rgba(3, 169, 244, 0.7) rgba(3, 169, 244, 0.25) rgba(3, 169, 244, 0.25);
+	border-radius: 100%;
+	-webkit-animation: clockwise 1.2s linear infinite;
+            animation: clockwise 1.2s linear infinite;
+}
+
+@-webkit-keyframes clockwise {
+	to {
+		transform: rotateZ(360deg);
+		-webkit-transform: rotateZ(360deg);
+		-moz-transform: rotateZ(360deg);
+		-o-transform: rotateZ(360deg);
+		-ms-transform: rotateZ(360deg);
+	}
+}
+
+@keyframes clockwise {
+  to {
+	transform: rotateZ(360deg);
+	-webkit-transform: rotateZ(360deg);
+	-moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+  }
+}
+
+
+/***公用区域{{{***/
+
+
+/***}}}公用区域***/
+
+
+/***首页{{{***/
+
+
+/***}}}首页***/
+
+
+
+
+
+

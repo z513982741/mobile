@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--#include virtual="../include/meta.html" -->
+    <title>小库优选——编辑收货地址</title>
+    <!--#include virtual="../include/style-script.html" -->
+  </head>
+  <body>
+    <!-- page 容器 -->
+    <div class="page" id="userAddressEdit">
+      <!-- 标题栏 -->
+		<header class="bar bar-nav c333">
+			<a href="index.html" class="icon icon-left pull-left"></a>
+			<h4 class="title">编辑收货地址</h4>
+		</header>
+		
+		<div class="content">
+			<div class="list-block mt5">
+			    <ul>
+			      <!-- Text inputs -->
+			      <li>
+			        <div class="item-content">
+			          <div class="item-inner">
+			            <div class="item-title label">收货人</div>
+			            <div class="item-input">
+			              <input type="text" placeholder="张三" value="">
+			            </div>
+			          </div>
+			        </div>
+			      </li>
+			      <li>
+			        <div class="item-content">
+			          <div class="item-inner">
+			            <div class="item-title label">联系电话</div>
+			            <div class="item-input">
+			              <input type="text" placeholder="15814554668" value="">
+			            </div>
+			          </div>
+			        </div>
+			      </li>
+			      <li>
+			        <div class="item-content">
+			          <div class="item-inner">
+			            <div class="item-title label">所在地区</div>
+			            <div class="item-input posi">
+			            	<input type="text" placeholder="选择手机" id="picker-name" class="input-text-right" value="广东省南山市" readonly="">
+							<span class="icon icon-right posi-right"></span>
+			            </div>
+			          </div>
+			        </div>
+			      </li>
+			      <li class="align-top">
+			        <div class="item-content">
+			          <div class="item-inner">
+			            <div class="item-input">
+			              <textarea>恩平街美林大厦旁</textarea>
+			            </div>
+			          </div>
+			        </div>
+			      </li>
+			    </ul>
+			</div>
+			<div class="list-block mt5">
+				<ul>
+					<li>
+				        <div class="item-content">
+				          <div class="item-inner">
+				            <div class="item-title label">设为默认</div>
+				            <div class="item-input posi">
+				              <label class="label-switch posi-right">
+				                <input type="checkbox">
+				                <div class="checkbox "></div>
+				              </label>
+				            </div>
+				          </div>
+				        </div>
+			      	</li>
+				</ul>
+			</div>
+			<div class="list-block mt5">
+				<ul>
+					<li>
+				        <div class="item-content">
+				          <div class="item-inner">
+				            <div class="item-title label"><a href="#" class="cred">删除地址</a></div>
+				        </div>
+			      	</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+  </body>
+</html>
