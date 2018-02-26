@@ -306,6 +306,10 @@ ul,li,dl,dt,dd {
   ul {
     clear: both;
     overflow: hidden;
+    color: #393939;
+    &.fs12 {
+      font-size:  @fs12;
+    }
     li {
       line-height: 1.5rem;
       float: left;
@@ -602,9 +606,10 @@ ul,li,dl,dt,dd {
       }
     }
     .bar-icon-01,.bar-icon-02,.bar-icon-03,.bar-icon-04 {
-      width: 1.3rem;
-      height: 1.3rem;
+      width: 1.2rem;
+      height: 1.2rem;
       display: inline-block;
+      margin-top: 3px;
     }
     .bar-icon-01 {
       background: url(../images/bar-icon-01.png) no-repeat;
@@ -706,6 +711,9 @@ ul,li,dl,dt,dd {
     }
   }
 }
+.icon-shaixuan {
+  font-size: 14px;   
+}
 /*-------采购中心 end-------*/
 
 /*-------采购单 start-------*/
@@ -720,8 +728,8 @@ ul,li,dl,dt,dd {
       width: 25%;
       float: left;
       line-height: 1.5rem;
-      font-size: @fs12;
-      color: @c666;
+      font-size: @fs14;
+      color: #393939;
     }
     dd {
       width: 75%;
@@ -900,11 +908,12 @@ ul,li,dl,dt,dd {
   overflow: hidden;
   dl {
     dt {
-      width: 50%;
+      width: 45%;
       float: left;
+      color: @c666;
     }
     dd {
-      width: 20%;
+      width: 25%;
       float: left;
       &:nth-child(2){
         width: 30%;
@@ -913,7 +922,7 @@ ul,li,dl,dt,dd {
         display: block;
         text-align: right;
         .cancel-input {
-          width: 3rem;
+          width: 4rem;
           border: 1px solid @c999;
           float: right;
           background: none;
@@ -923,7 +932,7 @@ ul,li,dl,dt,dd {
           height: 1.2rem;
         }
         .cancel-button {
-          width: 3rem;
+          width: 4rem;
           border: 1px solid @color;
           float: right;
           background: none;
@@ -1407,7 +1416,7 @@ ul,li,dl,dt,dd {
     &.active {
       color: @color;
       .icon-unselected:before {
-        content:"\e65c";
+        content:"\e632";
         color: @color;
       }
     }
@@ -1436,7 +1445,12 @@ ul,li,dl,dt,dd {
 
 .register-checkbox {
   .icon-xuanzhong {
-    color: @color;
+    color: #fe7273;
+    font-size: 14px;
+  }
+  .icon-weixuanzhong {
+    color: #fe7273;
+    font-size: 14px;
   }
 }
 // 地址 end
